@@ -21,48 +21,50 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-accent/5 to-primary/5">
       {/* Header */}
-      <div className="gradient-primary text-white py-8 px-4 shadow-glow animate-fade-in">
+      <div className="bg-primary text-primary-foreground py-6 px-4 animate-fade-in">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center mb-4">
-            <Home className="w-10 h-10 mr-3" />
-            <h1 className="text-4xl font-bold">The {familyName}'s</h1>
+            <Home className="w-8 h-8 mr-3" />
+            <h1 className="text-3xl font-bold">The {familyName}'s</h1>
           </div>
-          <p className="text-xl opacity-90">Your Family Command Center</p>
+          <p className="text-lg opacity-90">Your Family Command Center</p>
           <div className="flex items-center justify-center mt-4 space-x-2">
-            <Heart className="w-5 h-5 text-red-300" />
-            <span className="text-lg">Organized • Connected • Happy</span>
-            <Heart className="w-5 h-5 text-red-300" />
+            <Heart className="w-4 h-4 text-red-300" />
+            <span className="text-base">Organized • Connected • Happy</span>
+            <Heart className="w-4 h-4 text-red-300" />
           </div>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto p-4 -mt-8">
+      <div className="max-w-6xl mx-auto p-4 pb-24">
         <Tabs defaultValue="overview" className="w-full">
-          <TabsList className="grid w-full grid-cols-6 mb-8 bg-white shadow-medium rounded-xl p-2">
-            <TabsTrigger value="overview" className="flex items-center space-x-2">
-              <Home className="w-4 h-4" />
-              <span className="hidden sm:inline">Home</span>
+          
+          {/* Fixed Bottom Navigation */}
+          <TabsList className="fixed bottom-0 left-0 right-0 grid grid-cols-6 h-16 bg-card border-t border-border rounded-none p-1 z-50">
+            <TabsTrigger value="overview" className="flex flex-col items-center justify-center space-y-1 h-full text-xs">
+              <Home className="w-5 h-5" />
+              <span>Home</span>
             </TabsTrigger>
-            <TabsTrigger value="chores" className="flex items-center space-x-2">
-              <CheckSquare className="w-4 h-4" />
-              <span className="hidden sm:inline">Chores</span>
+            <TabsTrigger value="chores" className="flex flex-col items-center justify-center space-y-1 h-full text-xs">
+              <CheckSquare className="w-5 h-5" />
+              <span>Chores</span>
             </TabsTrigger>
-            <TabsTrigger value="planning" className="flex items-center space-x-2">
-              <Calendar className="w-4 h-4" />
-              <span className="hidden sm:inline">Plans</span>
+            <TabsTrigger value="planning" className="flex flex-col items-center justify-center space-y-1 h-full text-xs">
+              <Calendar className="w-5 h-5" />
+              <span>Plans</span>
             </TabsTrigger>
-            <TabsTrigger value="money" className="flex items-center space-x-2">
-              <PiggyBank className="w-4 h-4" />
-              <span className="hidden sm:inline">Money</span>
+            <TabsTrigger value="money" className="flex flex-col items-center justify-center space-y-1 h-full text-xs">
+              <PiggyBank className="w-5 h-5" />
+              <span>Money</span>
             </TabsTrigger>
-            <TabsTrigger value="health" className="flex items-center space-x-2">
-              <Pill className="w-4 h-4" />
-              <span className="hidden sm:inline">Health</span>
+            <TabsTrigger value="health" className="flex flex-col items-center justify-center space-y-1 h-full text-xs">
+              <Pill className="w-5 h-5" />
+              <span>Health</span>
             </TabsTrigger>
-            <TabsTrigger value="expenses" className="flex items-center space-x-2">
-              <Receipt className="w-4 h-4" />
-              <span className="hidden sm:inline">Expenses</span>
+            <TabsTrigger value="expenses" className="flex flex-col items-center justify-center space-y-1 h-full text-xs">
+              <Receipt className="w-5 h-5" />
+              <span>Expenses</span>
             </TabsTrigger>
           </TabsList>
 
