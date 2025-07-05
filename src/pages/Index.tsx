@@ -21,17 +21,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-accent/5 to-primary/5">
       {/* Header */}
-      <div className="bg-primary text-primary-foreground py-6 px-4 animate-fade-in">
+      <div className="bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground py-8 px-4 animate-fade-in shadow-lg">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center mb-4">
-            <Home className="w-8 h-8 mr-3" />
-            <h1 className="text-3xl font-bold">The {familyName}'s</h1>
+            <Home className="w-10 h-10 mr-3 text-white drop-shadow-md" />
+            <h1 className="text-4xl font-cursive font-bold text-white drop-shadow-md">The {familyName}'s</h1>
           </div>
-          <p className="text-lg opacity-90">Your Family Command Center</p>
+          <p className="text-xl font-cursive text-white/90 drop-shadow-sm">Your Family Command Center</p>
           <div className="flex items-center justify-center mt-4 space-x-2">
-            <Heart className="w-4 h-4 text-red-300" />
-            <span className="text-base">Organized • Connected • Happy</span>
-            <Heart className="w-4 h-4 text-red-300" />
+            <Heart className="w-5 h-5 text-pink-200" />
+            <span className="text-lg font-sans text-white/95">Organized • Connected • Happy</span>
+            <Heart className="w-5 h-5 text-pink-200" />
           </div>
         </div>
       </div>
@@ -71,35 +71,35 @@ const Index = () => {
           <TabsContent value="overview" className="space-y-6">
             {/* Family Dashboard */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="p-6 gradient-kids text-white shadow-glow animate-scale-in">
+              <Card className="p-6 bg-gradient-to-br from-primary to-accent text-white shadow-lg animate-scale-in border-0">
                 <div className="text-center">
-                  <Users className="w-8 h-8 mx-auto mb-2" />
-                  <h3 className="text-lg font-semibold">Family Members</h3>
-                  <p className="text-2xl font-bold">4</p>
+                  <Users className="w-8 h-8 mx-auto mb-2 drop-shadow-sm" />
+                  <h3 className="text-lg font-semibold font-cursive">Family Members</h3>
+                  <p className="text-2xl font-bold font-sans">4</p>
                 </div>
               </Card>
               
-              <Card className="p-6 bg-primary text-white shadow-glow animate-scale-in" style={{ animationDelay: "0.1s" }}>
+              <Card className="p-6 bg-gradient-to-br from-accent to-secondary text-foreground shadow-lg animate-scale-in border-0" style={{ animationDelay: "0.1s" }}>
                 <div className="text-center">
                   <CheckSquare className="w-8 h-8 mx-auto mb-2" />
-                  <h3 className="text-lg font-semibold">Today's Tasks</h3>
-                  <p className="text-2xl font-bold">7</p>
+                  <h3 className="text-lg font-semibold font-cursive">Today's Tasks</h3>
+                  <p className="text-2xl font-bold font-sans">7</p>
                 </div>
               </Card>
               
-              <Card className="p-6 bg-accent-kids text-white shadow-glow animate-scale-in" style={{ animationDelay: "0.2s" }}>
+              <Card className="p-6 bg-gradient-to-br from-secondary to-primary text-white shadow-lg animate-scale-in border-0" style={{ animationDelay: "0.2s" }}>
                 <div className="text-center">
-                  <PiggyBank className="w-8 h-8 mx-auto mb-2" />
-                  <h3 className="text-lg font-semibold">Kids' Savings</h3>
-                  <p className="text-2xl font-bold">₹350</p>
+                  <PiggyBank className="w-8 h-8 mx-auto mb-2 drop-shadow-sm" />
+                  <h3 className="text-lg font-semibold font-cursive">Kids' Savings</h3>
+                  <p className="text-2xl font-bold font-sans">₹350</p>
                 </div>
               </Card>
               
-              <Card className="p-6 bg-secondary text-white shadow-glow animate-scale-in" style={{ animationDelay: "0.3s" }}>
+              <Card className="p-6 bg-gradient-to-br from-accent via-secondary to-primary text-foreground shadow-lg animate-scale-in border-0" style={{ animationDelay: "0.3s" }}>
                 <div className="text-center">
                   <Calendar className="w-8 h-8 mx-auto mb-2" />
-                  <h3 className="text-lg font-semibold">This Week</h3>
-                  <p className="text-2xl font-bold">3 Events</p>
+                  <h3 className="text-lg font-semibold font-cursive">This Week</h3>
+                  <p className="text-2xl font-bold font-sans">3 Events</p>
                 </div>
               </Card>
             </div>
